@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #080D18;
+  color: #F1F5F9;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080D18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2D44;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2A3C5B;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(16, 24, 39, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 50, 73, 0.6);
+}
+
+.card-surface {
+  background-color: #151F30;
+  border: 1px solid #1E2D44;
+}
+
+.card-surface-hover:hover {
+  border-color: #2A3C5B;
+}
+
+/* Number input spinner hide for clean appearance */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
